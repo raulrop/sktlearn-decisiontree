@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
 
-tdata = pd.read_csv('datascience/customer_data.csv')
+tdata = pd.read_csv('customer_data.csv')
 del tdata['end_date']   #欠損行を早めに削除
 print(tdata.count())
 Y = tdata['is_deleted'] #   目的変数を指定
